@@ -19,6 +19,7 @@ body, html {
 
 .header {
     grid-area: header;
+    padding: 8px;
 }
 
 .header-search {
@@ -88,7 +89,42 @@ a {
 
 .header-actions {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.user-info-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    justify-items: start;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.header-actions .profile-icon-container {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+}
+
+.admin-name-container > p, h3 {
+    margin: 8px 0;
+}
+
+.actions-button-container {
+    justify-self: end;
+    align-self: center;
+    padding-right: 24px;
+}
+
+.action-button {
+    width: 80px;
+    height: 32px;
+    margin-right: 12px;
+    border: 0;
+    border-radius: 16px;
+    background-color: rgb(65, 168, 252);
+    font-weight: bold;
+    color: white;
 }
 
 .sidebar {
