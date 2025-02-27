@@ -11,7 +11,6 @@ body, html {
 .container {
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr 4fr;
     grid-template-columns: 1fr 4fr;
     grid-template-areas:
         "sidebar header"
@@ -189,4 +188,55 @@ a {
 
 .main {
     grid-area: main;
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 2fr .75fr ;
+}
+
+.projects {
+    padding: 16px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.project-heading {
+    grid-column: span 2;
+    margin: 0;
+}
+
+.projects h4 {
+    margin: 0;
+}
+
+.projects p {
+    font-size: .85em;
+    margin: 0;
+}
+
+.project-card {
+    padding: 16px;
+    border-left: solid 8px #F0B429;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.project-button-container {
+    display: flex;
+    justify-content: end;
+    align-content: end;
+    gap: 8px;
+    padding: 16px 16px 0 16px;
+}
+
+.project-action-button {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    padding: 0;
+    border: 0;
+}
+
+.project-action-button svg {
+    width: 16px;
 }
