@@ -106,7 +106,8 @@ a {
     border-radius: 28px;
 }
 
-.admin-name-container > p, h3 {
+.admin-name-container > p, 
+.admin-name-container > h3 {
     margin: 8px 0;
 }
 
@@ -187,14 +188,15 @@ a {
 
 
 .main {
+    padding: 16px;
     grid-area: main;
     background-color: #E2E8F0;
     display: grid;
     grid-template-columns: 2fr .75fr ;
+    gap: 16px;
 }
 
 .projects {
-    padding: 16px 16px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
@@ -239,4 +241,33 @@ a {
 
 .project-action-button svg {
     width: 16px;
+}
+
+.announcements-container {
+    background-color: white;
+    padding: 16px;
+}
+
+.announcements-container h4 {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.announcements-container p {
+    margin: 0;
+    font-size: 0.7em;
+}
+
+.dashboard-updates h3 {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+hr {
+    background-color: #F7F7F7;
+    margin: 16px 0;
+}
+
+.announcement {
+    padding: 4px;
 }
