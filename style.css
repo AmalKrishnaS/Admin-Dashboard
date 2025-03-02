@@ -193,10 +193,15 @@ a {
     background-color: #E2E8F0;
     display: grid;
     grid-template-columns: 2fr .75fr ;
-    gap: 16px;
 }
 
 .projects {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 16px;
+}
+
+.project-cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
